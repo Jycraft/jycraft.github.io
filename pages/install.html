@@ -13,13 +13,13 @@
 <link rel="canonical" href="https://jycraft.github.io/pages/install.html">
 
         <meta name="author" content="Jycraft" />
-        <meta name="description" content="Jycraft&#39;s mission includes making all aspects of Minecraft server plugins a lot easier. That includes installation. We still have a long ways to go. Below are instructions for where we&#39;re at. In a nutshell: Install Java Download a zip file Run the server Prerequisites You need a Spigot-capable ..." />
+        <meta name="description" content="Jycraft&#39;s mission includes making all aspects of Minecraft server plugins a lot easier. That includes installation. We still have a long ways to go. Prerequisites You&#39;ll need Java (presumably Java 8) and a Minecraft server. Jycraft prefers Spigot but still supports (for the moment) Canary. Download Our releases ..." />
 
     <meta property="og:site_name" content="Jycraft" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Install"/>
     <meta property="og:url" content="https://jycraft.github.io/pages/install.html"/>
-    <meta property="og:description" content="Jycraft&#39;s mission includes making all aspects of Minecraft server plugins a lot easier. That includes installation. We still have a long ways to go. Below are instructions for where we&#39;re at. In a nutshell: Install Java Download a zip file Run the server Prerequisites You need a Spigot-capable ..." />
+    <meta property="og:description" content="Jycraft&#39;s mission includes making all aspects of Minecraft server plugins a lot easier. That includes installation. We still have a long ways to go. Prerequisites You&#39;ll need Java (presumably Java 8) and a Minecraft server. Jycraft prefers Spigot but still supports (for the moment) Canary. Download Our releases ..." />
 
 
   <!-- Bootstrap -->
@@ -89,41 +89,42 @@ Jycraft      </a>
         <div class="entry-content">
             <p>Jycraft's mission includes making all aspects of Minecraft server 
 plugins a lot easier. That includes installation. We still have a long 
-ways to go. Below are instructions for where we're at. In a nutshell:</p>
-<ul>
-<li>
-<p>Install Java</p>
-</li>
-<li>
-<p>Download a zip file</p>
-</li>
-<li>
-<p>Run the server</p>
-</li>
-</ul>
+ways to go.</p>
 <h2>Prerequisites</h2>
-<p>You need a Spigot-capable version of Java installed. We'll take it from
-there.</p>
+<p>You'll need Java (presumably Java 8) and a Minecraft server. Jycraft 
+prefers Spigot but still supports (for the moment) Canary.</p>
 <h2>Download</h2>
-<p>Our releases are distributed from the GitHub release page.</p>
-<h2>Install</h2>
+<p>Our releases are distributed from the 
+<a href="https://github.com/Jycraft/jycraft.github.io/releases">GitHub release page</a>.</p>
+<h2>Installation</h2>
 <ul>
 <li>
-<p>unzip the file you downloaded</p>
+<p>Unzip the jycraft zip file</p>
 </li>
 <li>
-<p>Optional...edit config settings</p>
+<p><code>cd jycraft-spigot</code></p>
+</li>
+<li>
+<p><code>bin/build.sh</code></p>
+</li>
+<li>
+<p>Wait a while for it to finish</p>
+</li>
+<li>
+<p><code>bin/start.sh</code></p>
+</li>
+<li>
+<p>Edit the <code>eula.txt</code> file and change <code>eula=false</code> to <code>eula=true</code></p>
+</li>
+<li>
+<p><code>bin/start.sh</code></p>
+</li>
+<li>
+<p>In a browser, go to <code>http://localhost:4446</code> and click <code>Login</code></p>
 </li>
 </ul>
-<h2>Running</h2>
-<ul>
-<li>
-<p>java -r canary_mod.jar</p>
-</li>
-<li>
-<p>In a browser, go to</p>
-</li>
-</ul>
+<p>As a note, these instructions follow along with the 
+<a href="https://www.spigotmc.org/wiki/spigot-installation/">Spigot Install Instructions</a> </p>
         </div>
     </section>
       </div>
